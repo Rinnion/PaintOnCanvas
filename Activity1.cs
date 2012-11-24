@@ -58,7 +58,6 @@ namespace PaintOnCanvas
                 mBmp = Bitmap.CreateBitmap(Width, Height, Bitmap.Config.Argb8888);
                 canvasBitmap = new Canvas(mBmp);
                 canvasBitmap.DrawColor(Color.Black);
-                canvasBitmap.DrawARGB(255, 255, 255, 255);
 
                 Log.Debug(tag, String.Format("Client W:{0}, H:{1}", Width, Height));
             }
@@ -66,7 +65,7 @@ namespace PaintOnCanvas
             protected override void OnDraw(Canvas canvas)
             {
                 canvas.DrawColor(Color.Black);
-                canvas.SaveLayerAlpha(0, 0, Width, Height, 0x88, SaveFlags.All);
+                canvas.SaveLayerAlpha(0, 0, Width, Height, 0xFF, SaveFlags.All);
 
                 canvas.DrawBitmap(mBmp, 0, 0, mPaint);
 
