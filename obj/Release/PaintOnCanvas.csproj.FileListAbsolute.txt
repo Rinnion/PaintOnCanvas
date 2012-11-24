@@ -1,0 +1,13 @@
+C:\Users\Roman\documents\visual studio 2010\Projects\PaintOnCanvas\PaintOnCanvas\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Roman\documents\visual studio 2010\Projects\PaintOnCanvas\PaintOnCanvas\obj\Release\res\layout\main.axml
+C:\Users\Roman\documents\visual studio 2010\Projects\PaintOnCanvas\PaintOnCanvas\obj\Release\res\values\strings.xml
+C:\Users\Roman\documents\visual studio 2010\Projects\PaintOnCanvas\PaintOnCanvas\obj\Release\res\drawable\icon.png
+C:\Users\Roman\documents\visual studio 2010\Projects\PaintOnCanvas\PaintOnCanvas\obj\Release\R.cs.flag
+C:\Users\Roman\documents\visual studio 2010\Projects\PaintOnCanvas\PaintOnCanvas\obj\Release\uploadflags.txt
+C:\Users\Roman\documents\visual studio 2010\Projects\PaintOnCanvas\PaintOnCanvas\bin\Release\y 6nmki.o84.omre0].dll
+C:\Users\Roman\documents\visual studio 2010\Projects\PaintOnCanvas\PaintOnCanvas\bin\Release\y 6nmki.o84.omre0].pdb
+C:\Users\Roman\documents\visual studio 2010\Projects\PaintOnCanvas\PaintOnCanvas\bin\Release\y6nmki.o84.omre0_.apk
+C:\Users\Roman\documents\visual studio 2010\Projects\PaintOnCanvas\PaintOnCanvas\bin\Release\y6nmki.o84.omre0_-Signed.apk
+C:\Users\Roman\documents\visual studio 2010\Projects\PaintOnCanvas\PaintOnCanvas\obj\Release\y 6nmki.o84.omre0].dll
+C:\Users\Roman\documents\visual studio 2010\Projects\PaintOnCanvas\PaintOnCanvas\obj\Release\y 6nmki.o84.omre0].pdb
+C:\Users\Roman\documents\visual studio 2010\Projects\PaintOnCanvas\PaintOnCanvas\obj\Release\android\bin\y6nmki.o84.omre0_.apk

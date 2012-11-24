@@ -1,0 +1,14 @@
+c:\users\roman\documents\visual studio 2010\Projects\PaintOnCanvas\PaintOnCanvas\bin\Debug\PaintOnCanvas.dll.mdb
+C:\Users\Roman\documents\visual studio 2010\Projects\PaintOnCanvas\PaintOnCanvas\bin\Debug\PaintOnCanvas.dll
+C:\Users\Roman\documents\visual studio 2010\Projects\PaintOnCanvas\PaintOnCanvas\bin\Debug\PaintOnCanvas.pdb
+C:\Users\Roman\documents\visual studio 2010\Projects\PaintOnCanvas\PaintOnCanvas\bin\Debug\PaintOnCanvas.PaintOnCanvas.apk
+C:\Users\Roman\documents\visual studio 2010\Projects\PaintOnCanvas\PaintOnCanvas\bin\Debug\PaintOnCanvas.PaintOnCanvas-Signed.apk
+C:\Users\Roman\documents\visual studio 2010\Projects\PaintOnCanvas\PaintOnCanvas\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Roman\documents\visual studio 2010\Projects\PaintOnCanvas\PaintOnCanvas\obj\Debug\PaintOnCanvas.dll
+C:\Users\Roman\documents\visual studio 2010\Projects\PaintOnCanvas\PaintOnCanvas\obj\Debug\PaintOnCanvas.pdb
+C:\Users\Roman\documents\visual studio 2010\Projects\PaintOnCanvas\PaintOnCanvas\obj\Debug\android\bin\PaintOnCanvas.PaintOnCanvas.apk
+C:\Users\Roman\documents\visual studio 2010\Projects\PaintOnCanvas\PaintOnCanvas\obj\Debug\res\layout\main.axml
+C:\Users\Roman\documents\visual studio 2010\Projects\PaintOnCanvas\PaintOnCanvas\obj\Debug\res\values\strings.xml
+C:\Users\Roman\documents\visual studio 2010\Projects\PaintOnCanvas\PaintOnCanvas\obj\Debug\res\drawable\icon.png
+C:\Users\Roman\documents\visual studio 2010\Projects\PaintOnCanvas\PaintOnCanvas\obj\Debug\R.cs.flag
+C:\Users\Roman\documents\visual studio 2010\Projects\PaintOnCanvas\PaintOnCanvas\obj\Debug\uploadflags.txt
