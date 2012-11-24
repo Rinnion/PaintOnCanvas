@@ -118,20 +118,6 @@ namespace PaintOnCanvas
                         lines.Add(DataClass.Drawables[iPointerId].X);
                         lines.Add(DataClass.Drawables[iPointerId].Y);
 
-                        /*
-                        StringBuilder sb = new StringBuilder();                        
-                        
-                        for (int i = 0; i < lines.Count; i+=2)
-                        {
-                            sb.Append(lines[i]);
-                            sb.Append("x");
-                            sb.Append(lines[i+1]);
-                            sb.Append(" => ");
-                        }
-
-                        Log.Debug(tag, String.Format("Points lines: {0}", sb.ToString()));
-                        */
-
                         //Remove first line
                         if (DataClass.Drawables[iPointerId].Visible == false)
                         {
