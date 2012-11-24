@@ -23,17 +23,16 @@ namespace PaintOnCanvas
         {
             lstObjects = new List<DrawableObject>()
                 {
-                    new Circle { X = 100, Y = 100, Radius = 50, Color = Color.Red },
-                    new Circle { X = 150, Y = 150, Radius = 50, Color = Color.Orange},
-                    new Circle { X = 150, Y = 150, Radius = 50, Color = Color.Yellow},
-                    new Circle { X = 150, Y = 150, Radius = 50, Color = Color.Green},
-                    new Circle { X = 150, Y = 150, Radius = 50, Color = Color.LightBlue},
-                    new Circle { X = 150, Y = 150, Radius = 50, Color = Color.Blue},
-                    new Circle { X = 150, Y = 150, Radius = 50, Color = Color.Purple},
-                    new Circle { X = 150, Y = 150, Radius = 50, Color = Color.Lime},
-                    new Circle { X = 150, Y = 150, Radius = 50, Color = Color.LightGray},
-                    new Circle { X = 150, Y = 150, Radius = 50, Color = Color.LightPink},
-                    new Circle { X = 150, Y = 150, Radius = 50, Color = Color.Black}
+                    new Circle { X = 100, Y = 100, Radius = 50, Visible = true, Color = Color.Red },
+                    new Circle { X = 150, Y = 150, Radius = 50, Visible = true, Color = Color.Orange},
+                    new Circle { X = 150, Y = 150, Radius = 50, Visible = true, Color = Color.Yellow},
+                    new Circle { X = 150, Y = 150, Radius = 50, Visible = true, Color = Color.Green},
+                    new Circle { X = 150, Y = 150, Radius = 50, Visible = true, Color = Color.LightBlue},
+                    new Circle { X = 150, Y = 150, Radius = 50, Visible = true, Color = Color.Blue},
+                    new Circle { X = 150, Y = 150, Radius = 50, Visible = true, Color = Color.Purple},
+                    new Circle { X = 150, Y = 150, Radius = 50, Visible = true, Color = Color.Lime},
+                    new Circle { X = 150, Y = 150, Radius = 50, Visible = true, Color = Color.LightGray},
+                    new Circle { X = 150, Y = 150, Radius = 50, Visible = true, Color = Color.LightPink}
                 };
         }
     }

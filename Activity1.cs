@@ -44,8 +44,8 @@ namespace PaintOnCanvas
                 Log.Debug(tag, "Start view");
                 Focusable = true;
 
-                foreach (var item in DataClass.Drawables) 
-                    item.Visible = false;
+                //foreach (var item in DataClass.Drawables) 
+                //    item.Visible = false;
 
                 mPaint = new Paint();
                 mPaint.AntiAlias = true;
@@ -67,7 +67,7 @@ namespace PaintOnCanvas
                 canvas.DrawColor(Color.Black);
                 canvas.SaveLayerAlpha(0, 0, Width, Height, 0xFF, SaveFlags.All);
 
-                canvas.DrawBitmap(mBmp, 0, 0, mPaint);
+                //canvas.DrawBitmap(mBmp, 0, 0, mPaint);
 
                 foreach (var obj in DataClass.Drawables)
                 {                    
@@ -78,6 +78,8 @@ namespace PaintOnCanvas
                 canvas.Restore();
             }
 
+            private Dictionary<int, DrawableObject> dctControlable = new Dictionary<int, DrawableObject>();
+
             public override bool OnTouchEvent(MotionEvent e)
             {
                 MotionEvent.PointerCoords mepc = new MotionEvent.PointerCoords();
@@ -86,72 +88,49 @@ namespace PaintOnCanvas
                 int iEventPointerId = e.GetPointerId(iEventPointerIndex);
                 MotionEventActions action = e.Action & MotionEventActions.Mask;
 
-                var l = new List<string>();
-                for (int iPointerIndex = 0; iPointerIndex < e.PointerCount; iPointerIndex++)
-                {
-                    int iPointerId = e.GetPointerId(iPointerIndex);
-                    l.Add(String.Format("{0} => {1}", iPointerIndex, iPointerId));
-                    try
-                    {
-                        //pth.MoveTo();
-                        var lines = new List<float>();
-
-                            lines.Add(DataClass.Drawables[iPointerId].X);
-                            lines.Add(DataClass.Drawables[iPointerId].Y);
-
-                        for (int hCoords = 0; hCoords < e.HistorySize; hCoords++)
-                        {
-                            e.GetHistoricalPointerCoords(iPointerIndex, hCoords, mepc);
-                            //pth.LineTo(mepc.X, mepc.Y);                           
-                            lines.Add(mepc.X);
-                            lines.Add(mepc.Y);
-                            lines.Add(mepc.X);
-                            lines.Add(mepc.Y);                            
-                        }
-
-                        e.GetPointerCoords(iPointerIndex, mepc);
-
-                        DataClass.Drawables[iPointerId].X = mepc.X;
-                        DataClass.Drawables[iPointerId].Y = mepc.Y;
-
-                        lines.Add(DataClass.Drawables[iPointerId].X);
-                        lines.Add(DataClass.Drawables[iPointerId].Y);
-
-                        //Remove first line
-                        if (DataClass.Drawables[iPointerId].Visible == false)
-                        {
-                            lines.RemoveAt(0);
-                            lines.RemoveAt(0);
-                            lines.RemoveAt(0);
-                            lines.RemoveAt(0);
-                        }
-
-                        mPaint.Color = DataClass.Drawables[iPointerId].Color;
-                        
-                        canvasBitmap.DrawLines(lines.ToArray(), mPaint);
-
-                        //canvasBitmap.DrawPath(pth, mPaint);
-
-                    }
-                    catch
-                    {
-                        l.Add(String.Format("ex", iPointerIndex, iPointerId));
-                    }
-                }
-
-                Log.Debug(tag, string.Format("{0}, {1}", iEventPointerIndex, string.Join(", ", l)));
-
                 switch (action)
                 {
                     case MotionEventActions.Down:
                     case MotionEventActions.PointerDown:
                         Log.Debug(tag, String.Format("Point Down"));
-                        DataClass.Drawables[iEventPointerId].Visible = true;
+                        //DataClass.Drawables[iEventPointerId].Visible = true;
+                        e.GetPointerCoords(iEventPointerIndex, mepc);
+                        foreach (var item in DataClass.Drawables)
+                        {
+                            if (item.Collision(mepc.X, mepc.Y))
+                            {
+                                dctControlable.Add(iEventPointerId, item);
+                                break;
+                            }
+                        }
+                        break;
+                    case MotionEventActions.Move:
+                        var l = new List<string>();
+                        for (int iPointerIndex = 0; iPointerIndex < e.PointerCount; iPointerIndex++)
+                        {
+                            int iPointerId = e.GetPointerId(iPointerIndex);
+                            l.Add(String.Format("{0} => {1}", iPointerIndex, iPointerId));
+                            try
+                            {
+                                e.GetPointerCoords(iPointerIndex, mepc);
+
+                                dctControlable[iPointerId].X = mepc.X;
+                                dctControlable[iPointerId].Y = mepc.Y;
+
+                            }
+                            catch
+                            {
+                                l.Add(String.Format("ex", iPointerIndex, iPointerId));
+                            }
+                        }
+
+                        Log.Debug(tag, string.Format("{0}, {1}", iEventPointerIndex, string.Join(", ", l)));
                         break;
                     case MotionEventActions.Up:
                     case MotionEventActions.PointerUp:
                         Log.Debug(tag, String.Format("Point Up"));
-                        DataClass.Drawables[iEventPointerId].Visible = false;
+                        //DataClass.Drawables[iEventPointerId].Visible = false;
+                        dctControlable.Remove(iEventPointerId);
                         break;
                 }
 

@@ -15,6 +15,8 @@ namespace PaintOnCanvas
 
         protected bool mVisible = false;
         public bool Visible { get { return mVisible; } set { mVisible = value; } }
+
+        internal abstract bool Collision(float x, float y);
     }
 
     class Square : DrawableObject
@@ -25,6 +27,11 @@ namespace PaintOnCanvas
         {
             paint.Color = Color;
             canvas.DrawRect(X - Width / 2, Y - Width / 2, X + Width / 2, Y + Width / 2, paint);
+        }
+
+        internal override bool Collision(float x, float y)
+        {
+            throw new NotImplementedException();
         }
     }
 
