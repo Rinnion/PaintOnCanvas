@@ -66,7 +66,7 @@ public class MonoPackageManager {
 
 class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
-		"y 6nmki.o84.omre0].dll",
+		"PaintOnCanvas.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

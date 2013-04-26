@@ -6,7 +6,17 @@ using Android.Graphics;
 
 namespace PaintOnCanvas
 {
-    abstract class DrawableObject
+    public interface IDrawableObject
+    {
+        void Draw(Canvas canvas, Paint paint);
+        float X{get;set;}
+        float Y{get;set;}
+        Color Color{get;set;}
+        bool Visible{get;set;}
+        bool Collision(float x, float y);
+    }
+    
+    abstract class DrawableObject:IDrawableObject
     {
         public abstract void Draw(Canvas canvas, Paint paint);
         public float X { get; set; }
@@ -16,7 +26,16 @@ namespace PaintOnCanvas
         protected bool mVisible = false;
         public bool Visible { get { return mVisible; } set { mVisible = value; } }
 
-        internal abstract bool Collision(float x, float y);
+        public abstract bool Collision(float x, float y);
+
+        public DrawableObject(){}
+        public DrawableObject(DrawableObject original)
+        {
+            X=original.X;
+            Y=original.Y;
+            Color=original.Color; 
+            mVisible=Visible;
+        }
     }
 
     class Square : DrawableObject
@@ -29,7 +48,7 @@ namespace PaintOnCanvas
             canvas.DrawRect(X - Width / 2, Y - Width / 2, X + Width / 2, Y + Width / 2, paint);
         }
 
-        internal override bool Collision(float x, float y)
+        public override bool Collision(float x, float y)
         {
             throw new NotImplementedException();
         }

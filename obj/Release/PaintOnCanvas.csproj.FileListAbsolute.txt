@@ -4,10 +4,10 @@ C:\Users\Roman\documents\visual studio 2010\Projects\PaintOnCanvas\PaintOnCanvas
 C:\Users\Roman\documents\visual studio 2010\Projects\PaintOnCanvas\PaintOnCanvas\obj\Release\res\drawable\icon.png
 C:\Users\Roman\documents\visual studio 2010\Projects\PaintOnCanvas\PaintOnCanvas\obj\Release\R.cs.flag
 C:\Users\Roman\documents\visual studio 2010\Projects\PaintOnCanvas\PaintOnCanvas\obj\Release\uploadflags.txt
-C:\Users\Roman\documents\visual studio 2010\Projects\PaintOnCanvas\PaintOnCanvas\bin\Release\y 6nmki.o84.omre0].dll
-C:\Users\Roman\documents\visual studio 2010\Projects\PaintOnCanvas\PaintOnCanvas\bin\Release\y 6nmki.o84.omre0].pdb
-C:\Users\Roman\documents\visual studio 2010\Projects\PaintOnCanvas\PaintOnCanvas\bin\Release\y6nmki.o84.omre0_.apk
-C:\Users\Roman\documents\visual studio 2010\Projects\PaintOnCanvas\PaintOnCanvas\bin\Release\y6nmki.o84.omre0_-Signed.apk
-C:\Users\Roman\documents\visual studio 2010\Projects\PaintOnCanvas\PaintOnCanvas\obj\Release\y 6nmki.o84.omre0].dll
-C:\Users\Roman\documents\visual studio 2010\Projects\PaintOnCanvas\PaintOnCanvas\obj\Release\y 6nmki.o84.omre0].pdb
-C:\Users\Roman\documents\visual studio 2010\Projects\PaintOnCanvas\PaintOnCanvas\obj\Release\android\bin\y6nmki.o84.omre0_.apk
+C:\Users\Roman\documents\visual studio 2010\Projects\PaintOnCanvas\PaintOnCanvas\bin\Release\PaintOnCanvas.dll
+C:\Users\Roman\documents\visual studio 2010\Projects\PaintOnCanvas\PaintOnCanvas\bin\Release\PaintOnCanvas.pdb
+C:\Users\Roman\documents\visual studio 2010\Projects\PaintOnCanvas\PaintOnCanvas\bin\Release\PaintOnCanvas.PaintOnCanvas.apk
+C:\Users\Roman\documents\visual studio 2010\Projects\PaintOnCanvas\PaintOnCanvas\bin\Release\PaintOnCanvas.PaintOnCanvas-Signed.apk
+C:\Users\Roman\documents\visual studio 2010\Projects\PaintOnCanvas\PaintOnCanvas\obj\Release\PaintOnCanvas.dll
+C:\Users\Roman\documents\visual studio 2010\Projects\PaintOnCanvas\PaintOnCanvas\obj\Release\PaintOnCanvas.pdb
+C:\Users\Roman\documents\visual studio 2010\Projects\PaintOnCanvas\PaintOnCanvas\obj\Release\android\bin\PaintOnCanvas.PaintOnCanvas.apk

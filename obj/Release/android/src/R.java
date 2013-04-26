@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package y6nmki.o84.omre0_;
+package paintoncanvas.paintoncanvas;
 
 public final class R {
     public static final class attr {

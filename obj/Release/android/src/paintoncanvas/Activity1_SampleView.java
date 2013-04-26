@@ -12,7 +12,7 @@ public class Activity1_SampleView
 			"n_onDraw:(Landroid/graphics/Canvas;)V:GetOnDraw_Landroid_graphics_Canvas_Handler\n" +
 			"n_onTouchEvent:(Landroid/view/MotionEvent;)Z:GetOnTouchEvent_Landroid_view_MotionEvent_Handler\n" +
 			"";
-		mono.android.Runtime.register ("PaintOnCanvas.Activity1/SampleView, y 6nmki.o84.omre0], Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", Activity1_SampleView.class, __md_methods);
+		mono.android.Runtime.register ("PaintOnCanvas.Activity1/SampleView, PaintOnCanvas, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", Activity1_SampleView.class, __md_methods);
 	}
 
 
@@ -20,7 +20,7 @@ public class Activity1_SampleView
 	{
 		super (p0);
 		if (getClass () == Activity1_SampleView.class)
-			mono.android.TypeManager.Activate ("PaintOnCanvas.Activity1/SampleView, y 6nmki.o84.omre0], Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Android.Content.Context, Mono.Android, Version=0.0.0.0, Culture=neutral, PublicKeyToken=c4c4237547e4b6cd", this, new java.lang.Object[] { p0 });
+			mono.android.TypeManager.Activate ("PaintOnCanvas.Activity1/SampleView, PaintOnCanvas, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Android.Content.Context, Mono.Android, Version=0.0.0.0, Culture=neutral, PublicKeyToken=c4c4237547e4b6cd", this, new java.lang.Object[] { p0 });
 	}
 
 
@@ -28,7 +28,7 @@ public class Activity1_SampleView
 	{
 		super (p0, p1);
 		if (getClass () == Activity1_SampleView.class)
-			mono.android.TypeManager.Activate ("PaintOnCanvas.Activity1/SampleView, y 6nmki.o84.omre0], Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Android.Content.Context, Mono.Android, Version=0.0.0.0, Culture=neutral, PublicKeyToken=c4c4237547e4b6cd:Android.Util.IAttributeSet, Mono.Android, Version=0.0.0.0, Culture=neutral, PublicKeyToken=c4c4237547e4b6cd", this, new java.lang.Object[] { p0, p1 });
+			mono.android.TypeManager.Activate ("PaintOnCanvas.Activity1/SampleView, PaintOnCanvas, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Android.Content.Context, Mono.Android, Version=0.0.0.0, Culture=neutral, PublicKeyToken=c4c4237547e4b6cd:Android.Util.IAttributeSet, Mono.Android, Version=0.0.0.0, Culture=neutral, PublicKeyToken=c4c4237547e4b6cd", this, new java.lang.Object[] { p0, p1 });
 	}
 
 
@@ -36,7 +36,7 @@ public class Activity1_SampleView
 	{
 		super (p0, p1, p2);
 		if (getClass () == Activity1_SampleView.class)
-			mono.android.TypeManager.Activate ("PaintOnCanvas.Activity1/SampleView, y 6nmki.o84.omre0], Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Android.Content.Context, Mono.Android, Version=0.0.0.0, Culture=neutral, PublicKeyToken=c4c4237547e4b6cd:Android.Util.IAttributeSet, Mono.Android, Version=0.0.0.0, Culture=neutral, PublicKeyToken=c4c4237547e4b6cd:System.Int32, mscorlib, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e", this, new java.lang.Object[] { p0, p1, p2 });
+			mono.android.TypeManager.Activate ("PaintOnCanvas.Activity1/SampleView, PaintOnCanvas, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Android.Content.Context, Mono.Android, Version=0.0.0.0, Culture=neutral, PublicKeyToken=c4c4237547e4b6cd:Android.Util.IAttributeSet, Mono.Android, Version=0.0.0.0, Culture=neutral, PublicKeyToken=c4c4237547e4b6cd:System.Int32, mscorlib, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e", this, new java.lang.Object[] { p0, p1, p2 });
 	}
 
 

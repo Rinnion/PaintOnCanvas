@@ -10,7 +10,22 @@ namespace PaintOnCanvas
     class Circle : DrawableObject
     {
         string tag = "PaintOnCanvas.Circle";
-        
+
+        public Circle()
+            :base() 
+        { 
+        }
+
+        public Circle(DrawableObject original) 
+            :base(original) 
+        {
+            var o = original as Circle;
+            if (o != null)
+            {
+                Radius = o.Radius;
+            }
+        }
+
         public float Radius { get; set; }
 
         public override void Draw(Canvas canvas, Paint paint)
@@ -19,7 +34,7 @@ namespace PaintOnCanvas
             canvas.DrawCircle(X, Y, Radius, paint);
         }
 
-        internal override bool Collision(float x, float y)
+        public override bool Collision(float x, float y)
         {
             var dx = X - x;
             var x2 = dx * dx;
@@ -30,5 +45,4 @@ namespace PaintOnCanvas
             return r2 >= (x2 + y2);
         }
     }
-
 }
