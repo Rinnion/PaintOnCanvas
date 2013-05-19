@@ -1,2 +1,0 @@
-PaintOnCanvas.Activity1;paintoncanvas.Activity1
-PaintOnCanvas.SampleView;paintoncanvas.SampleView

@@ -40,10 +40,10 @@ namespace PaintOnCanvas
             mPaint = new Paint();
             mPaint.AntiAlias = true;
 
-            //IWindowManager wm = context.GetSystemService(WindowService).JavaCast<IWindowManager>();
-            //Display dsp = wm.DefaultDisplay;
-            //Width = dsp.Width;
-            //Height = dsp.Height;
+            IWindowManager wm = context.GetSystemService(WindowService).JavaCast<IWindowManager>();
+            Display dsp = wm.DefaultDisplay;
+            Width = dsp.Width;
+            Height = dsp.Height;
 
             mBmp = Bitmap.CreateBitmap(Width, Height, Bitmap.Config.Argb8888);
             canvasBitmap = new Canvas(mBmp);
